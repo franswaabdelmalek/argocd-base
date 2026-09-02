@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: headlamp
+  namespace: argocd
+spec:
+  description: "Project for HeadLamp service"
+  sourceRepos:
+    - "https://kubernetes-sigs.github.io/headlamp/"
+  destinations:
+    - namespace: headlamp
+      server: https://kubernetes.default.svc
+  clusterResourceWhitelist:
+    - group: '*'
+      kind: '*'
