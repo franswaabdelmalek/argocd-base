@@ -1,2 +1,4 @@
-# argocd-base
-Base setup for my ArgoCD
+# ArgoCD Base Setup
+Base setup for my ArgoCD that includes:
+- cert-manager
+- headlamp
