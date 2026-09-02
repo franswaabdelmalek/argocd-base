@@ -8,7 +8,9 @@ rules:
   resources:
   - '*'
   verbs:
-  - '*'
+  - get
+  - list
+  - watch
 - nonResourceURLs:
   - '*'
   verbs:
