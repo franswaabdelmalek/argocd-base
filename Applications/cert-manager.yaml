@@ -11,10 +11,9 @@ spec:
       chart: cert-manager
       helm:
         valueFiles:
-          - $configs/cert-manager-values.yaml
+          - $configs/configs/cert-manager-values.yaml
     - repoURL: https://github.com/franswaabdelmalek/argocd-base.git
       targetRevision: HEAD
-      path: configs
       ref: configs
   destination:
     server: https://kubernetes.default.svc
