@@ -11,7 +11,7 @@ spec:
       chart: cert-manager
       helm:
         valueFiles:
-          - $configs/configs/values/cert-manager-values.yaml
+          - $configs/value-files/cert-manager-values.yaml
     - repoURL: https://github.com/franswaabdelmalek/argocd-base.git
       targetRevision: HEAD
       ref: configs
