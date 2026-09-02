@@ -4,7 +4,8 @@ metadata:
   name: headlamp-dashboard-ingress
 spec:
   rules:
-    - http:
+    - host: headlamp.local
+      http:
         paths:
           - path: /headlamp
             pathType: Exact
