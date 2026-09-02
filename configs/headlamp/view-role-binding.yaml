@@ -3,7 +3,7 @@ kind: ClusterRoleBinding
 metadata:
   name: headlamp-view
   annotations:
-    argocd.argoproj.io/sync-wave: 100
+    argocd.argoproj.io/sync-wave: '100'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole
