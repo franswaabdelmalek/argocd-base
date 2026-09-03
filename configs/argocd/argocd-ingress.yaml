@@ -7,9 +7,14 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`argocd.local`)
-      kind: Rule
+    - kind: Rule
+      match: Host(`argocd.local`)
       services:
         - name: my-argocd-server
           port: 443
           serversTransport: argocd-server-transport
+    - kind: Rule
+      match: Path(`/argo-rollouts`)
+      services:
+        - name: argocd-configs-argo-rollouts-dashboard
+          port: 3100
