@@ -13,7 +13,7 @@ spec:
           port: 443
           serversTransport: argocd-server-transport
     - kind: Rule
-      match: Path(`/argo-rollouts`)
+      match: Host(`argocd.local`) && Path(`/argo-rollouts`)
       services:
         - name: argocd-configs-argo-rollouts-dashboard
           port: 3100
