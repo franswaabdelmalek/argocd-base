@@ -9,6 +9,12 @@ spec:
     - repoURL: https://github.com/franswaabdelmalek/argocd-base.git
       targetRevision: HEAD
       path: configs/argocd
+    - repoURL: https://argoproj.github.io/argo-helm
+      targetRevision: 2.43.0
+      chart: argo-rollouts
+    - repoUrl: https://argoproj.github.io/argo-helm
+      targetRevision: 2.0.3
+      chart: argo-workflows
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
