@@ -7,6 +7,11 @@ spec:
     - websecure
   routes:
     - kind: Rule
+      match: Path(`/argo-rollouts`)
+      services:
+        - name: argocd-configs-argo-rollouts-dashboard
+          port: 3100
+    - kind: Rule
       match: Host(`argocd.local`)
       services:
         - name: my-argocd-server
