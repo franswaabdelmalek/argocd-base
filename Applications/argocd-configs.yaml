@@ -12,7 +12,7 @@ spec:
     - repoURL: https://argoproj.github.io/argo-helm
       targetRevision: 2.43.0
       chart: argo-rollouts
-    - repoUrl: https://argoproj.github.io/argo-helm
+    - repoURL: https://argoproj.github.io/argo-helm
       targetRevision: 2.0.3
       chart: argo-workflows
   destination:
