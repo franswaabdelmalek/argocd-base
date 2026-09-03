@@ -7,7 +7,7 @@ spec:
     - web
   routes:
     - kind: Rule
-      match: Host(`argo-rollouts.local`)
+      match: Host(`argo-workflows.local`)
       services:
         - name: argocd-configs-argo-workflows-server
           port: 2746
